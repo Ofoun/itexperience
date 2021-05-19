@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+   <head>
+      <meta charset="UTF-8">
+      <title th:utext="#{label.title}"></title> 
+      <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+   </head>
+   <body>
+      <div class="headerClass">
+         <a th:href="@{/login1?lang=de}"><img src="/images/drapeau_allemand.png" alt="">Deutsch</a>
+         &nbsp;|&nbsp;
+         <a th:href="@{/login1?lang=fr}"><img src="/images/drapeau_français.png" alt="">Français</a>
+         &nbsp;|&nbsp;
+         <a th:href="@{/login1?lang=en}"><img src="/images/drapeau_USA.jpg" alt="">English</a>
+      </div>
+      <form method="post" action="login">
+         <table>
+            <tr>
+               <td>
+                  <strong th:utext="#{label.userName}"></strong>
+               </td>
+               <td><input name="userName" /></td>
+            </tr>
+            <tr>
+               <td>
+                  <strong  th:utext="#{label.password}"></strong>
+               </td>
+               <td><input name="password" /></td>
+            </tr>
+            <tr>
+               <td colspan="2">
+                  <input type="submit" th:value="#{label.submit}" />
+               </td>
+            </tr>
+         </table>
+      </form>
+   </body>
+</html>

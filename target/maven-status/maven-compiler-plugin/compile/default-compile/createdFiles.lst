@@ -1,0 +1,6 @@
+com\ofoun\iterfahrungen\ItErfahrungenApplication.class
+com\ofoun\iterfahrungen\controller\MainController2.class
+com\ofoun\iterfahrungen\controller\MainController.class
+com\ofoun\iterfahrungen\resolver\UrlLocaleResolver.class
+com\ofoun\iterfahrungen\config\WebMvcConfig.class
+com\ofoun\iterfahrungen\interceptor\UrlLocaleInterceptor.class
